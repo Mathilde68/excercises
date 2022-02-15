@@ -55,5 +55,29 @@ function rgbToHex (r,g,b){
 }
 
 hexToRGB("#c0ffee");
-rgbToHex (192,102,37);
+rgbToHex (10,92,210);
 
+function cssToRGB(cssColor= "rgb(1,2,3)"){
+const firstComma = cssColor.indexOf(",");
+const secondComma = cssColor.indexOf(",", firstComma +1);
+const lastComma = cssColor.lastIndexOf(",");
+const lastParenthesis = cssColor.lastIndexOf(")");
+
+const r = cssColor.substring(4,firstComma).trim();
+const g = cssColor.substring(firstComma+1,secondComma).trim();
+const b = cssColor.substring(lastComma+1,lastParenthesis).trim();
+
+/* 
+console.log(`_${r}_`);
+console.log(`_${g}_`);
+console.log(`_${b}_`); */
+
+console.log(r);
+console.log(g);
+console.log(b);
+
+
+
+}
+
+cssToRGB("rgb(  92, 2   ,155  )");
