@@ -54,7 +54,7 @@ function rgbToHex (r,g,b){
 
 }
 
-hexToRGB("#c0ffee");
+hexToRGB("#917878");
 rgbToHex (10,92,210);
 
 function cssToRGB(cssColor= "rgb(1,2,3)"){
